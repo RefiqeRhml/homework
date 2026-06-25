@@ -1,43 +1,72 @@
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
-h1{
-    margin: 30px 400px;
-    padding: 5px 85px;
-    color: aliceblue;
-    background-color: #003274;
-}
-.user1, .user3{
-    border: 5px solid #003274;
-    border-top-left-radius: 30px;
-    width: 100px;
-    height: 100px;
-    font-style: italic;
-    margin-left: 180px;
-}
-.user2{
-    border: 5px solid #003274;
-    border-top-right-radius: 30px;
-    width: 100px;
-    height: 100px;
-    font-style: italic;
-    margin-left: auto;
-    margin-right: 180px;
-}
-.box1{
-    margin: 30px 20px;
-}
-.box2{
-    margin: 30px 10px;
-}
-.box3{
-    margin: 15px 10px;
-}
-.text{
-    text-align: right;
-}
-p{
+div{
+    display: flex;
+    border: 0px solid black;
+    width: 130px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
     background-color: lightgray;
-    padding: 5px;
-    margin: -47px 291px 0px 290px;
+    z-index: 1;
+}
+.box:hover{
+    color: white;
+}
+.box1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: cornflowerblue;
+    left: -100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+.box1:hover::before{
+    left: 0;
+}
+.box2::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: cornflowerblue;
+    left: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+.box2:hover::before{
+    left: 0;
+}
+.box3::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: cornflowerblue;
+    top: -100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+.box3:hover::before{
+    top: 0;
+}
+.box4::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: cornflowerblue;
+    top: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+.box4:hover::before{
+    top: 0;
 }
