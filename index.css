@@ -20,127 +20,53 @@ div{
 }
 .box1::before{
     content: "";
-    width: 0%;
-    height: 0%;
+    border-top: 10px solid cornflowerblue;
+    width: 100%;
+    height: 100%;
+    left: -100%;
     position: absolute;
-    background-color: cornflowerblue;
-    top: 50%;
-    left: 50%;
     transition: 0.5s;
     z-index: -1;
-    border-radius: 50%;
-    transform: translate(-50%,-50%);
 }
 .box1:hover::before{
-    width: 180px;
-    height: 180px;
+    left: 0%;
 }
 .box2::before{
     content: "";
-    width: 180px;
-    height: 180px;
+    border-top: 10px solid cornflowerblue;
+    width: 100%;
+    height: 100%;
+    right: -100%;
     position: absolute;
-    background-color: cornflowerblue;
-    top: 50%;
-    left: 50%;
     transition: 0.5s;
     z-index: -1;
-    border-radius: 50%;
-    transform: translate(-50%,-50%);
 }
 .box2:hover::before{
-    width: 0px;
-    height: 0px;
+    right: 0%;
 }
 .box3::before{
     content: "";
-    width: 0%;
-    height: 0%;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    background-color: cornflowerblue;
-    top: 50%;
-    left: 50%;
+    border-bottom: 10px solid cornflowerblue;
+    left: -100%;
     transition: 0.5s;
     z-index: -1;
-    transform: translate(-50%,-50%);
 }
 .box3:hover::before{
-    width: 150px;
-    height: 150px;
+    left: 0%;
 }
 .box4::before{
     content: "";
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    background-color: cornflowerblue;
-    top: 50%;
-    left: 50%;
+    border-bottom: 10px solid cornflowerblue;
+    right: -100%;
     transition: 0.5s;
     z-index: -1;
-    transform: translate(-50%,-50%);
 }
 .box4:hover::before{
-    width: 0px;
-    height: 0px;
-}
-.box5::before{
-    content: "";
-    position: absolute;
-    background-color: cornflowerblue;
-    top: 50%;
-    left: 0%;
-    width: 100%;
-    height: 0%;
-    transition: 0.5s;
-    z-index: -1;
-    transform: translateY(-50%);
-}
-.box5:hover::before{
-    height: 100%;
-}
-.box6::before{
-    content: "";
-    position: absolute;
-    background-color: cornflowerblue;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    z-index: -1;
-}
-.box6:hover::before{
-    top: 50%;
-    height: 0%;
-}
-.box7::before{
-    content: "";
-    position: absolute;
-    background-color: cornflowerblue;
-    top: 0%;
-    left: 50%;
-    width: 0%;
-    height: 100%;
-    transform: translateX(-50%);
-    transition: 0.5s;
-    z-index: -1;
-}
-.box7:hover::before{
-    width: 100%;
-}
-.box8::before{
-    content: "";
-    position: absolute;
-    background-color: cornflowerblue;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    z-index: -1;
-}
-.box8:hover::before{
-    left: 50%;
-    width: 0%;
+    right: 0%;
 }
